@@ -451,6 +451,12 @@ p {
 	margin-right: 8px;
 }
 
+@media (max-width: 475px) {
+    .common-button-groups .btn {
+        font-size: 15px !important;
+    }
+}
+
 .common-button-groups .btn:hover {
 	background-color: #2563EB;
 }
@@ -469,6 +475,7 @@ p {
 	background-color: transparent;
 	color: var(--black);
 	position: relative;
+	margin-top: 0px !important;
 }
 
 .common-button-groups .btn.btn-copy .icon {
@@ -594,7 +601,7 @@ p {
 
 .work-experiance-card {
 	overflow: hidden;
-	height: 299px;
+	/* height: 299px; */
 }
 
 .work-experiance-card .work-experiance-main {
