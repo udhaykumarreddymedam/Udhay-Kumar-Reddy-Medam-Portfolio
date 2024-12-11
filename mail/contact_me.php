@@ -29,8 +29,8 @@ mail($to, $email_subject, $email_body, $headers);
 // 2. Send a thank-you email back to the customer
 $thank_you_subject = "Thank You for Reaching Out!";
 $thank_you_body = "Dear $name,\n\n"
-                . "Thank you for reaching out to us! Your input is valuable and greatly appreciated.\n\n"
-                . "We have received your message and our team will get back to you shortly.\n\n"
+                . "Thank you for reaching out to me! Your input is valuable and greatly appreciated.\n\n"
+                . "I have received your message and I will get back to you shortly.\n\n"
                 . "Here are the details of your message:\n\n"
                 . "Name: $name\n"
                 . "Email: $email_address\n"
@@ -38,7 +38,7 @@ $thank_you_body = "Dear $name,\n\n"
                 . "Message:\n$message\n\n"
                 . "Thank you for your interest and support.\n\n"    
                 . "Best regards,\n"
-                . "The Campaign Team";
+                . "Udhay Kumar Reddy Medam";
 
 // Send the thank-you email to the customer
 $thank_you_headers = "From: udhaykumarmedam@gmail.com\n";  // Your business email address as the sender
