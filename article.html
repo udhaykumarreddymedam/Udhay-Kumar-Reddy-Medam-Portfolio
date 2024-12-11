@@ -387,21 +387,21 @@
                           <div class="row gx-3">
                             <div class="col-md-6">
                               <div class="mb-4">
-                                <label class="form-label">Name</label>
-                                <input type="text" class="form-control shadow-none" placeholder="Enter your name">
+                                <label class="form-label">Name<span class="text-danger">*</span></label>
+                                <input type="text" class="form-control shadow-none" name="user-name" id="user-name" placeholder="Enter your name" required>
                               </div>
                             </div>
                             <div class="col-md-6">
                               <div class="mb-4">
-                                <label class="form-label">Email</label>
-                                <input type="text" class="form-control shadow-none" placeholder="Enter your email">
+                                <label class="form-label">Email<span class="text-danger">*</span></label>
+                                <input type="email" class="form-control shadow-none" id="user-email" name="user-email" placeholder="Enter your email" required>
                               </div>
                             </div>
                             <div class="col-md-12">
                               <div class="mb-4">
-                                <label class="form-label">Comment</label>
-                                <textarea class="form-control shadow-none" rows="4"
-                                  placeholder="Type details about your inquiry"></textarea>
+                                <label class="form-label">Comment<span class="text-danger">*</span></label>
+                                <textarea id="user-message" class="form-control shadow-none" rows="4"
+                                  placeholder="Type details about your inquiry" required></textarea>
                               </div>
                             </div>
                             <div class="col-md-12">
@@ -417,6 +417,7 @@
                               </button>
                             </div>
                           </div>
+                          <p class="mt-3 text-dark"><span class="text-danger">Note:</span> If the form isn’t working, connect via <a href="https://www.linkedin.com/in/mudhay/">LinkedIn</a></p>
                         </div>
                       </div>
                     </div>
