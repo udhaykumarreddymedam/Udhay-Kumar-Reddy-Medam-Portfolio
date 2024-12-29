@@ -43,42 +43,40 @@
 }
 
 /* Default scrollbar styling (for WebKit browsers: Chrome, Edge, Safari) */
-::-webkit-scrollbar {
-  width: 12px; /* Scrollbar width */
-  height: 12px; /* Scrollbar height for horizontal scrollbar */
+/* ::-webkit-scrollbar {
+  width: 12px; 
+  height: 12px; 
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent; /* Transparent track to blend with the background */
+  background: transparent; 
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #4770FF; /* Scrollbar color */
-  border-radius: 50px; /* Capsule shape */
-  border: 3px solid transparent; /* Adds spacing for the capsule look */
-  background-clip: padding-box; /* Ensures the border doesn't overlap */
+  background: #4770FF; 
+  border-radius: 50px; 
+  border: 3px solid transparent; 
+  background-clip: padding-box;
 }
 
-/* Hover effect */
 ::-webkit-scrollbar-thumb:hover {
-  background: #4770FF; /* Darker shade on hover */
+  background: #4770FF;
 }
 
-/* Hide scrollbar by default */
+
 body {
-  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-y: hidden;
 }
 
-/* Show scrollbar when scrolling */
+
 body:hover {
-  overflow-y: auto; /* Show vertical scrollbar */
+  overflow-y: auto; 
 }
 
-/* For Firefox */
 * {
-  scrollbar-width: thin; /* Make the scrollbar thin */
-  scrollbar-color: #4770FF transparent; /* Capsule scrollbar color */
-}
+  scrollbar-width: thin; 
+  scrollbar-color: #4770FF transparent; 
+} */
 
 
 /*=============================

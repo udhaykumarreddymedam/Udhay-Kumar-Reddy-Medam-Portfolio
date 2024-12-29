@@ -99,14 +99,14 @@
 	});
 
 
-	OverlayScrollbars(document.querySelectorAll("body"), {
-		className: "os-theme-dark",
-		sizeAutoCapable: true,
-		scrollbars: {
-		  visibility: "auto",
-		  autoHide: "leave",
-		  autoHideDelay: 1000,
-		},
-	  });
+	// OverlayScrollbars(document.querySelectorAll("body"), {
+	// 	className: "os-theme-dark",
+	// 	sizeAutoCapable: true,
+	// 	scrollbars: {
+	// 	  visibility: "auto",
+	// 	  autoHide: "leave",
+	// 	  autoHideDelay: 1000,
+	// 	},
+	//   });
 	  
 })(jQuery);
