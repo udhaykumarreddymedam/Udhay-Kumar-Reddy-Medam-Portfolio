@@ -42,6 +42,45 @@
 	--border: #DBDFE5;
 }
 
+/* Default scrollbar styling (for WebKit browsers: Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 12px; /* Scrollbar width */
+  height: 12px; /* Scrollbar height for horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Transparent track to blend with the background */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4770FF; /* Scrollbar color */
+  border-radius: 50px; /* Capsule shape */
+  border: 3px solid transparent; /* Adds spacing for the capsule look */
+  background-clip: padding-box; /* Ensures the border doesn't overlap */
+}
+
+/* Hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background: #4770FF; /* Darker shade on hover */
+}
+
+/* Hide scrollbar by default */
+body {
+  overflow-y: hidden; /* Hide vertical scrollbar */
+}
+
+/* Show scrollbar when scrolling */
+body:hover {
+  overflow-y: auto; /* Show vertical scrollbar */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* Make the scrollbar thin */
+  scrollbar-color: #4770FF transparent; /* Capsule scrollbar color */
+}
+
+
 /*=============================
 	02. Common CSS start
 ===============================*/
@@ -405,6 +444,31 @@ p {
 	height: 100%;
 }
 
+#card-titles{
+	@media (min-width: 320px) and (max-width: 375px) {
+		font-size: 18px !important;
+	}
+}
+
+.profile-card .text p{
+	@media (min-width: 320px) and (max-width: 375px) {
+		font-size: 15px !important;
+		text-align: justify;
+	}
+}
+
+#card-titles-2{
+	@media (min-width: 320px) and (max-width: 375px) {
+		font-size: 26px !important;
+	}
+}
+
+#card-titles-3{
+	@media (min-width: 320px) and (max-width: 375px) {
+		font-size: 17px !important;
+	}
+}
+
 .card-body {
 	padding: 24px;
 }
@@ -476,6 +540,10 @@ p {
 	color: var(--black);
 	position: relative;
 	margin-top: 0px !important;
+	
+	@media (min-width: 320px) and (max-width: 375px) {
+		margin-top: 10px !important;
+	}
 }
 
 .common-button-groups .btn.btn-copy .icon {

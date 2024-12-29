@@ -62,7 +62,7 @@
 	$(".client-feedback-slider").slick({
 		slidesToShow: 2,
 		slidesToScroll: 1,
-		autoplay: false,
+		autoplay: true,
 		dots: false,
 		infinite: true,
 		arrows: true,
@@ -98,4 +98,15 @@
 		},]
 	});
 
+
+	OverlayScrollbars(document.querySelectorAll("body"), {
+		className: "os-theme-dark",
+		sizeAutoCapable: true,
+		scrollbars: {
+		  visibility: "auto",
+		  autoHide: "leave",
+		  autoHideDelay: 1000,
+		},
+	  });
+	  
 })(jQuery);
